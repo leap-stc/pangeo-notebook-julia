@@ -1,5 +1,7 @@
 FROM pangeo/pangeo-notebook:2023.10.03
 
+# mostly taken from https://github.com/2i2c-org/coessing-image/blob/55adca9b2caa1c886a3340ff9668fea3785727cc/Dockerfile#L1
+# likely outdated versions, for now just for testing.
 USER root
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH ${NB_PYTHON_PREFIX}/bin:$PATH
