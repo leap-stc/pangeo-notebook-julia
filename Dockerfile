@@ -6,6 +6,9 @@ USER root
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH ${NB_PYTHON_PREFIX}/bin:$PATH
 
+RUN apt-get update -qq --yes > /dev/null && \
+    apt-get install --yes -qq curl > /dev/null
+
 ENV JULIA_VERSION 1.7.3
 ENV JULIA_PATH /srv/julia
 ENV JULIA_DEPOT_PATH ${JULIA_PATH}/pkg
