@@ -9,7 +9,7 @@ ENV PATH ${NB_PYTHON_PREFIX}/bin:$PATH
 RUN apt-get update -qq --yes > /dev/null && \
     apt-get install --yes -qq curl > /dev/null
 
-ENV JULIA_VERSION 1.7.3
+ENV JULIA_VERSION 1.9.3
 ENV JULIA_PATH /srv/julia
 ENV JULIA_DEPOT_PATH ${JULIA_PATH}/pkg
 ENV PATH $PATH:${JULIA_PATH}/bin
